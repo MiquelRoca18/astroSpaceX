@@ -1,22 +1,19 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import CardLaunch from '../components/CardLaunch.astro';
-import Pagination from '../components/Pagination.astro';
-import { getLatestLaunches } from '../services/spacex';
+import Layout from '../../layouts/Layout.astro';
+import CardLaunch from '../../components/CardLaunch.astro';
+import Pagination from '../../components/Pagination.astro';
+import { getLatestLaunches } from '../../services/spacex';
 
-
-const currentPage = 1;
+const currentPage = Number(Astro.params.page);
 const pageSize = 9;
 const { launches, totalDocs } = await getLatestLaunches(currentPage, pageSize);
-console.log(`Launches data in index.astro:`, launches);  // Verifica los datos obtenidos
-console.log(`Total documents in index.astro: ${totalDocs}`);  // Verifica el total de documentos
+console.log(`Launches data in [page].astro:`, launches);  // Verifica los datos obtenidos
+console.log(`Total documents in [page].astro: ${totalDocs}`);  // Verifica el total de documentos
 
 const totalPages = Math.ceil(totalDocs / pageSize);
 ---
 
-<Layout title="SpaceX Launches">
-  
+<Layout title={`SpaceX Launches - Página ${currentPage}`}>
   <!-- Grid de lanzamientos -->
   <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 my-8">
     {launches.map((launch) => (
