@@ -1,54 +1,47 @@
-# Astro Starter Kit: Basics
+# 🚀 Sitio Web de Lanzamientos de SpaceX - Astro
 
-```sh
-npm create astro@latest -- --template basics
-```
+Este proyecto es una aplicación web creada con **Astro** que muestra todos los lanzamientos de **SpaceX** a lo largo de su historia. La aplicación se conecta a la API pública de **SpaceX** para obtener la información de cada lanzamiento y la presenta de forma organizada y fácil de navegar, con soporte para **paginación**.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 🖥️ Funcionalidades principales
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+1. **Listado de lanzamientos de SpaceX**: Muestra todos los lanzamientos de SpaceX, incluyendo:
+   - Número de vuelo.
+   - Parche de la misión.
+   - Descripción breve del lanzamiento.
+   - Estado del lanzamiento (éxito o fallo).
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+2. **Paginación**: Permite navegar a través de todos los lanzamientos de manera fácil y fluida, mostrando los lanzamientos de manera secuencial desde el primero hasta el último.
 
-## 🚀 Project Structure
+3. **Conexión a la API de SpaceX**: La aplicación se conecta a la API oficial de SpaceX para obtener los datos más recientes de los lanzamientos.
 
-Inside of your Astro project, you'll see the following folders and files:
+## 🛠️ Tecnologías utilizadas
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Card.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+- **Astro**: Framework ligero y rápido para generar sitios web estáticos.
+- **API de SpaceX**: Fuente de datos para todos los lanzamientos de SpaceX.
+- **JavaScript**: Para la lógica del frontend y la manipulación de los datos de la API.
+- **Tailwind**: Estilos del sitio web.
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 🚀 Instrucciones para la instalación
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+1. Clona el repositorio:
 
-Any static assets, like images, can be placed in the `public/` directory.
+    ```bash
+    git clone https://github.com/tu-usuario/nombre-del-repositorio.git
+    ```
 
-## 🧞 Commands
+2. Instala las dependencias:
 
-All commands are run from the root of the project, from a terminal:
+    ```bash
+    npm install
+    ```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+3. Ejecuta la aplicación:
 
-## 👀 Want to learn more?
+    ```bash
+    npm start
+    ```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 🌟 Futuras mejoras
+
+- Agregar filtros avanzados (por año, éxito o fracaso del lanzamiento, etc.).
+- Mejorar el diseño con animaciones y visualización de datos adicionales (como ubicación o video del lanzamiento).
