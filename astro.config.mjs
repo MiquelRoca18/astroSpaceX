@@ -9,5 +9,10 @@ import netlify from '@astrojs/netlify';
 export default defineConfig({
   integrations: [tailwind(), preact(), react()],
   output: 'server',
+  vite: {
+    optimizeDeps: {
+      include: ['react', 'react-dom', 'react/jsx-runtime', 'react/jsx-dev-runtime']
+    }
+  },
   adapter: netlify()
 });
