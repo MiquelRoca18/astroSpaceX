@@ -26,19 +26,20 @@ Este proyecto es una aplicación web creada con **Astro** que muestra todos los 
 1. Clona el repositorio:
 
     ```bash
-    git clone https://github.com/tu-usuario/nombre-del-repositorio.git
+    git clone https://github.com/MiquelRoca18/astroSpaceX.git
     ```
 
 2. Instala las dependencias:
 
     ```bash
+    cd astroSpaceX
     npm install
     ```
 
 3. Ejecuta la aplicación:
 
     ```bash
-    npm start
+    npm run dev
     ```
 
 ## 🌟 Futuras mejoras
