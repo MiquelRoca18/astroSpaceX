@@ -1,4 +1,3 @@
-// spacex.ts
 import {type Doc, type APISpaceXResponse} from '../types/api'
 
 export const getLaunchBy = async ({ id }: { id: string }) => {
@@ -19,8 +18,8 @@ export const getLatestLaunches = async (page = 1, pageSize = 9) => {
                 sort: {
                     date_unix: 'asc'
                 },
-                limit: pageSize,  // Cuántos lanzamientos quieres obtener
-                page: page,   // La página que quieres obtener
+                limit: pageSize,  
+                page: page,   
             }
         })
     });
